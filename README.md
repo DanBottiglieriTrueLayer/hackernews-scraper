@@ -48,5 +48,8 @@ Again, 10 can be substituted with another integer between 0 and 100.
 |Log4net                                         |Easy logging. Can be configured via the log4net.config file.
 |Microsoft.Extensions.Configuration              |Used to read the appsettings.json file for a app setting.  
 |Microsoft.Extensions.Configuration.Abstractions |Required by Microsoft.Extensions.Configuration.Json.   
-|Microsoft.Extensions.Configuration.Json         |Required for Microsoft.Extensions.Configuration to support JSON files.       
+|Microsoft.Extensions.Configuration.Json         |Required for Microsoft.Extensions.Configuration to support JSON files.    
+|Microsoft.NET.Test.Sdk                          |Required by NUnit for writing tests.   
 |Newtonsoft.Json                                 |Serialises objects into JSON and vice versa.   
+|NUnit                                           |A test module which allows automated unit testing.
+|Nunit3TestAdapter                               |Allows running of the tests created with NUnit within Visual Studio.

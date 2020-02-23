@@ -27,7 +27,7 @@ Once published, run the following commands:
 
 `hackernews --posts 10`
 
-This will scrape 10 posts from Hacker News as JSON. The 10 can be substituted for any integer between 0 and 100 to pull that many posts.
+This will scrape 10 posts from Hacker News as JSON. The 10 can be substituted for any integer between 1 and 100 to pull that many posts.
 
 ### Running in Docker
 
@@ -39,7 +39,7 @@ This creates an image file called 'hackernews'. The image can be run with the fo
 
 `docker run hackernews --posts 10`
 
-Again, 10 can be substituted with another integer between 0 and 100.
+Again, 10 can be substituted with another integer between 1 and 100.
 
 ## Libraries Used
 |Library                                         |Use                                  
@@ -52,4 +52,4 @@ Again, 10 can be substituted with another integer between 0 and 100.
 |Microsoft.NET.Test.Sdk                          |Required by NUnit for writing tests.   
 |Newtonsoft.Json                                 |Serialises objects into JSON and vice versa.   
 |NUnit                                           |A test module which allows automated unit testing.
-|Nunit3TestAdapter                               |Allows running of the tests created with NUnit within Visual Studio.
+|Nunit3TestAdapter                               |Allows running of the tests created with NUnit within Visual Studio.  

@@ -15,12 +15,16 @@ If you wish to Dockerise the solution, you will also need to create an account w
 ## How to run
 
 Navigate to the root of the solution and run:
+
 `nuget restore`
+
 `dotnet publish -c Release`
 
 If either step fails, check your environmental variables and ensure Path has access to both nuget and dotnet.
 Once published, run the following commands:
+
 `cd src\HackerNewsScraperTest.Console\bin\Release\netcoreapp3.0\publish`
+
 `hackernews --posts 10`
 
 This will scrape 10 posts from Hacker News as JSON. The 10 can be substituted for any integer between 0 and 100 to pull that many posts.
@@ -28,9 +32,11 @@ This will scrape 10 posts from Hacker News as JSON. The 10 can be substituted fo
 ### Running in Docker
 
 Once the application has been published, navigate to the root folder once more and run the following command:
+
 `docker build -t hackernews -f Dockerfile .`
 
 This creates an image file called 'hackernews'. The image can be run with the following command:
+
 `docker run hackernews --posts 10`
 
 Again, 10 can be substituted with another integer between 0 and 100.

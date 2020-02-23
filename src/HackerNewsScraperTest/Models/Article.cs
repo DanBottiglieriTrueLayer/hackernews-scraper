@@ -42,7 +42,7 @@ namespace HackerNewsScraperTest.Models
             else
                 throw new InvalidDataException($"Comments cannot be a negative number. Comments: {comments}");
         }
-
+         
         public override string ToString()
         {
             return $"{Rank}. {Title} by {Author} ({Uri}).\n{Points} points, {Comments} comments.";

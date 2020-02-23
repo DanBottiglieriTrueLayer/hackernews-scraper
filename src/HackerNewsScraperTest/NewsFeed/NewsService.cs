@@ -39,7 +39,7 @@ namespace HackerNewsScraperTest.NewsFeed
             {
                 var htmlDoc = feed.GetNextDocument(i);                
 
-                // Cells with the class "athing" contain the Title, the URL
+                // Table rows with the class "athing" contain the Title, the URL
                 // and the Rank of the article.
                 var htmlNodes = htmlDoc.DocumentNode.Descendants("tr")
                     .Where(x => x.Attributes["class"]?.Value == "athing")

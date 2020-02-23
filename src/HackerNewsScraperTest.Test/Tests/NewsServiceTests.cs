@@ -18,7 +18,6 @@ namespace HackerNewsScraperTest.Test
         [TestCase(50)]
         [TestCase(3)]
         [TestCase(1)]
-        [TestCase(0)]
         public void GetNewsWithValidNumbers(int posts)
         {
             var results = newsService.GetNewsFromHackerNews(posts);

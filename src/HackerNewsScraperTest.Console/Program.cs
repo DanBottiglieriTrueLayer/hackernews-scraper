@@ -45,9 +45,9 @@ namespace HackerNewsScraperTest.Console
         private static int ValidateInput(string[] args)
         {
             if (args == null || args.Length != 2 || args[0] != "--posts")
-                throw new ArgumentException("Please use the following syntax: hackernews --posts n\nWhere n is an integer from 0-100.");
-            if (!int.TryParse(args[1], out int posts) || posts < 0 || posts > 100)
-                throw new ArgumentException("Please enter a valid integer from 0-100 after --posts.");
+                throw new ArgumentException("Please use the following syntax: hackernews --posts n\nWhere n is an integer from 1-100.");
+            if (!int.TryParse(args[1], out int posts) || posts <= 0 || posts > 100)
+                throw new ArgumentException("Please enter a valid integer from 1-100 after --posts.");
             else
                 return posts;
         }

@@ -6,9 +6,9 @@ This is my submission to TrueLayer's Hacker News scraper test.
 
 These instructions assume you are running on Windows as this is what I built it with.
 
-The application requires .NET Core 3.0 to run. [Download it here]([https://dotnet.microsoft.com/download/dotnet-core/3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0)). You do not need to download it if you have Visual Studio 2019 as it is bundled with it.
+The application requires .NET Core 3.0 to run. ([Download it here](https://dotnet.microsoft.com/download/dotnet-core/3.0)). You do not need to download it if you have Visual Studio 2019 as it is bundled with it.
 
-If you wish to run the source code, I recommend downloading Visual Studio 2019 ([Download it here]([https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/))). With it, comes Nuget Package Manager to manage the packages in the solution.
+If you wish to run the source code, I recommend downloading Visual Studio 2019 ([Download it here](https://visualstudio.microsoft.com/downloads/)). With it, comes Nuget Package Manager to manage the packages in the solution.
 
 If you wish to Dockerise the solution, you will also need to create an account with [Docker](https://www.docker.com) and download then install it. Please note that Docker requires an operating system that supports Hyper-V (for instance, Windows Home does not support this).
 
